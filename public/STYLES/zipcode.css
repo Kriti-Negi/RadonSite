@@ -1,0 +1,73 @@
+.grad-background > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grad-background > form > .inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grad-background > form > .inputs > input, 
+.grad-background > form > .inputs > button{
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1.1rem;
+}
+
+.grad-background > form > .inputs > input{
+    margin: 0px 15px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.grad-background > form > .inputs > button{
+    width: 120px;
+    background-color: #E6B43A;
+    font-weight: bold;
+}
+
+.card-container{
+    padding: 40px 10%;
+}
+
+.card-container > .card{
+    border-radius: 8px;
+    background-color: #175B6D;
+    color: white;
+    padding: 20px 30px 30px;
+}
+
+.card-container > .card > .header > h1{
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+    width: 50%;
+}
+
+.card-container > .card > .table > table{
+    text-align: center;
+    width: 100%;
+}
+
+.table-headers{
+    background-color: #fff;
+    color: #175B6D;
+    
+}
+
+th, td{
+    padding: 10px;
+}
+
+a{
+    color: #fff;
+}
+.table-headers > th{
+    border-radius: 8px;
+}

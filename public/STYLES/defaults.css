@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    font-family: 'Inter', sans-serif;
+
+    position: relative;
+    min-height: 100vh;
+}
+p {
+    line-height: 145%;
+}
+a{
+    text-decoration: none;
+    color: #175B6D;
+    font-weight: 500;
+}
+.grad-background{
+    background: linear-gradient(119.31deg, #FF8F8F 23.35%, #175B6D 74.35%);
+    padding: 100px 10%;
+    color: #fff;
+}
+
+.grad-background > .page-header{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.grad-background > .page-header-para{
+    font-size: 1rem;
+}
+
+footer{
+    height: 110px;
+    background-color: #C4978F;
+    margin-top: 40px;
+}
+

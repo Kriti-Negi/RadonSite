@@ -1,0 +1,21 @@
+.grid-container{
+    padding: 75px 0;
+}
+
+.grid-container > .grid{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-container > .grid > .img, .grid-container > .grid > .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container > .grid > .img > img{
+    width: 100%;
+    max-width: 300px;
+}

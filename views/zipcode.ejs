@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="STYLES/defaults.css">
+        <link rel="stylesheet" href="STYLES/zipcode.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            
+        </nav>
+
+        <section class = "grad-background">
+            <form action="/zipcode" method = "post">
+                <h2>Check your area's radon levels</h2>
+                <div class = "inputs">
+                    <input type = "text" placeholder="Enter Your Zip Code" name = "zip">
+                    <button type = "submit">Check</button>
+                </div>
+            </form>
+        </section>
+        <% if (showCard){ %>
+            <section class = "card-container">
+                <div class = "card">
+                    <div class = "header">
+                        <h1><%=zipcode%></h1>
+                    </div>
+    
+                    <div class = "table">
+                        <table>
+                            <tr class = "table-headers">
+                                <th></th>
+                                <th>Percentage Levels</th>
+                                <th>Suggested Maximum Level</th>
+                            </tr>
+                            <tr>
+                                <td>EPA</td>
+                                <td><%=epaPercent%></td>
+                                <td>4 pCi/L</td>
+                            </tr>
+                            <tr>
+                                <td>WHO</td>
+                                <td><%=whoPercent%></td>
+                                <td>2.7 pCi/L</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class = "summary">
+                        <% if(total !== "N/A"){%>
+                            <p class = "summary-text">In summary, of the <%=total%> housestested in the zipcode area <%=zipcode%>, <%=epaPercent%> percent of the basements of those houses had an unhealthy amount of radon in them.</p>
+
+                        <%}%>
+                        <p class = "final-text">Get a free randon testing kit <a href = "/test">here</a>!</p>
+                    </div>
+                </div>
+            </section>
+        <%}%>
+
+        <footer></footer>
+
+    </body>
+    
+</html>

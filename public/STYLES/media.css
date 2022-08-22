@@ -1,0 +1,9 @@
+@media only screen and (max-width: 800px) {
+    .grid-container > .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-container > .img-left > .img{
+        grid-row-start: 2;
+    }
+}
